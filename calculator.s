@@ -1,10 +1,10 @@
 # calculator.s
 # Purpose: Arith operation calc, namely less than, plus, minus, and multiply on two parameters in assembly
-# Name: Grantley Kuo 301289611
+# Name: Grantley
 # Date: Feb 28th, 2024
 
 
-	.globl	x_LessThan_y # Make sure you change the name of this function - see XX function below
+	.globl	x_LessThan_y 
 	.globl	plus
 	.globl	minus
 	.globl	mul
@@ -28,9 +28,9 @@ plus: # Description: Performs integer addition
 
 
 minus: # Description: Performs integer subtraction
-# Requirement:
-# - you cannot use sub* instruction
-# - you cannot use a loop
+# Restrictions:
+# - doesnt not use sub* instruction
+# - doesnt not use loop
 	
 						# %edi->x, %esi->y
 	xorl	%eax, %eax	# set the return value (%eax) to 0 by clearing the register using XOR bitwise operation
